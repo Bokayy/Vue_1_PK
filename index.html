@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb801bc08c.js" crossorigin="anonymous"></script>
+    <title>Vjezba 1</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vježba 1 - API</h1>
+            <div class="break">&nbsp;</div>
+    
+
+            <div v-show="showPagination" class="pageIndicator">
+                <i class="fa-solid fa-angle-left" id="btnLeft"></i>
+                <p class="pageNo">Page:1</p>
+                <i class="fa-solid fa-angle-right" id="btnRight"></i>
+            </div>
+
+                <div class="search">
+                    <div class="wrap">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?" id="test">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="divider">
+            &nbsp;
+        </div>
+        <mycmp></mycmp>
+        <main>
+            <div id="api">
+            </div>
+        </main>
+
+    </div>
+    <script src="vue.js"></script>
+    <script src="app.js"></script>
+    <script src="fetch.js"></script>
+    
+</body>
+</html>
